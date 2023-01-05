@@ -20,7 +20,7 @@ public class MovieController {
         return new ResponseEntity<>("New movie added successfully", HttpStatus.CREATED);
     }
 
-    @PostMapping("/add-movie")
+    @PostMapping("/add-director")
     public ResponseEntity<String> addDirector(@RequestBody Director director){
         movieService.addDirector(director);
         return new ResponseEntity<>("New director added successfully", HttpStatus.CREATED);
